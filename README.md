@@ -1,4 +1,4 @@
-# НАЗВАНИЕ_ПРОЕКТА
+# Vue Admin Panel
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -21,64 +21,34 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## NPM commands
+## YARN commands
 
 ### Install project's dependencies
 
 ```sh
-npm ci
+yarn install --frozen-lockfile
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+yarn dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+yarn build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+yarn lint
 ```
 
 ### Unit tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+yarn test:unit
 ```
-
-## GitFlow
-
-### Default
-
-`master/main` - версия проекта соответсвующая версии на продакшене от которой идёт ответвление для `hotfix` задач  
-`develop/dev` - версия проекта от которой идёт ответвление для выполнения основных задач и `bugfix` задач  
-`release` - версия проекта соответсвующая версии на продакшене. Пуш в неё только при выкатывании релиза и `hotfix` от ветки `master/main`. После формируется `CHANGELOG.md`  
-
-#### Examples
-
-```bash
-# Поступала hotfix задача (DC-321)
-master -> DC-321 -> Merge Request DC-321 to master with squash commits -> Merge Request master to release without squash commits
-# После, актуализировать develop
-develop -> git pull origin master -> git push origin develop
-
-# Поступала bugfix/обычная задача (DC-321)
-develop -> DC-321 -> Merge Request DC-321 to develop with squash commits
-
-# День релиза
-Merge Request develop to master without squash commits -> Merge Request master to release without squash commits
-```
-
-TODO: Описывается разработчиком соглашение ветвления на проекте
-
-## CONTRIBUTING
-
-Просьба ознакомиться с установленными [правилами на проекте](CONTRIBUTING.md)  
-Самый свежий всегда можно найти в [DC Vue Preset](https://git.dclouds.ru/vue/dc-vue-preset/-/blob/master/CONTRIBUTING.md)
